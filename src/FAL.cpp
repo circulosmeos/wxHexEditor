@@ -501,7 +501,7 @@ DiffNode* FAL::NewNode( uint64_t start_byte, const char* data, int64_t size, boo
 	if( size < 0 ){//Deletion!
 		newnode->old_data = new unsigned char[-size];
 		if( newnode->old_data == NULL )
-			wxLogError( _("Not Enought RAM") );
+			wxLogError( _("Not Enough RAM") );
 		else{
 			Seek( start_byte, wxFromStart );
 			Read( newnode->old_data, -size );
