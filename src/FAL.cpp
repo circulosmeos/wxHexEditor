@@ -242,7 +242,7 @@ bool FAL::OSDependedOpen(wxFileName& myfilename, FileAccessMode FAM, unsigned Fo
 		return true;
 		}
 	if( !myfilename.IsFileReadable() ){
-		wxMessageBox(wxString(_("File is not readable by permissions."))+wxT("\n")+_("Please change file permissons or run this program with Windows UAC privileges."),_("Error"), wxOK|wxICON_ERROR);
+		wxMessageBox(wxString(_("File is not readable by permissions."))+wxT("\n")+_("Please change file permissions or run this program with Windows UAC privileges."),_("Error"), wxOK|wxICON_ERROR);
 		return false;
 		}
 
@@ -281,7 +281,7 @@ bool FAL::OSDependedOpen(wxFileName& myfilename, FileAccessMode FAM, unsigned Fo
 	//Owning file
 	else if( !myfilename.IsFileReadable() && DoFileExists ){ // "and myfilename.FileExist()" not used because it's for just plain files, not for block ones.
 		if( wxCANCEL == wxMessageBox(wxString(_("File is not readable by permissions."))+ wxT("\n")+
-												        _("Please change file permissons or run this program with root privileges.")+wxT("\n")+
+												        _("Please change file permissions or run this program with root privileges.")+wxT("\n")+
 												        _("You can also try to own the file temporarily (requires root's password.)")+wxT("\n")+wxT("\n")+
 												        _("Do you want to own the file?"),_("Warning"), wxOK|wxCANCEL|wxICON_WARNING) )
 
