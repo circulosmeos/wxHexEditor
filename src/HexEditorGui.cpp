@@ -355,7 +355,7 @@ HexEditorGui::HexEditorGui( wxWindow* parent, wxWindowID id, const wxString& tit
 	m_auiToolBar->Realize();
 
 	statusBar = this->CreateStatusBar( 5, wxSTB_SIZEGRIP, wxID_ANY );
-	statusBar->SetFont( wxFont( 8, wxFONTFAMILY_DEFAULT, wxFONTSTYLE_NORMAL, wxFONTWEIGHT_NORMAL, false, wxEmptyString ) );
+	statusBar->SetFont( wxFont( 20, wxFONTFAMILY_DEFAULT, wxFONTSTYLE_NORMAL, wxFONTWEIGHT_NORMAL, false, wxEmptyString ) );
 
 	wxBoxSizer* FrameSizer;
 	FrameSizer = new wxBoxSizer( wxVERTICAL );

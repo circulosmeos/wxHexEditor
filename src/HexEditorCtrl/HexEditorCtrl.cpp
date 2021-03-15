@@ -640,8 +640,8 @@ void HexEditorCtrl::OnResize( wxSizeEvent &event ) {
 	fgSizer1->Add( m_static_byteview, 0, wxALIGN_CENTER|wxALL, 0 );
 	fgSizer1->Add( m_static_null, 0, wxALIGN_CENTER, 3 );
 	fgSizer1->Add( offset_ctrl, 0, wxALIGN_CENTER_VERTICAL|wxALL|wxEXPAND, 0 );
-	fgSizer1->Add( hex_ctrl, 0, wxALIGN_CENTER_VERTICAL|wxALL|wxEXPAND, 0 );
-	fgSizer1->Add( text_ctrl, 0, wxALIGN_CENTER_VERTICAL|wxALL|wxEXPAND, 0 );
+	fgSizer1->Add( hex_ctrl, 0, wxALIGN_CENTER_VERTICAL|wxALL|wxEXPAND, 5 );
+	fgSizer1->Add( text_ctrl, 0, wxALIGN_CENTER_VERTICAL|wxALL|wxEXPAND, 5 );
 	fgSizer1->Add( offset_scroll_real, 0, wxEXPAND, 0 );
 
 #else
